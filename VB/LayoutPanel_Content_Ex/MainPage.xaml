@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="LayoutPanel_Content_Ex.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:dxd="http://schemas.devexpress.com/winfx/2008/xaml/docking" 
+    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    mc:Ignorable="d" Height="300" Width="642">
+
+    <dxd:DockLayoutManager Name="dockLayoutManager1">
+        <dxd:DockLayoutManager.LayoutRoot>
+            <dxd:LayoutGroup Name="Root">
+                <dxd:LayoutPanel Caption="Panel1">
+                    <dxd:LayoutGroup Orientation="Vertical">
+                        <dxd:LayoutGroup Caption="Personal info" Orientation="Vertical" GroupBorderStyle="GroupBox" ShowCaption="True">
+                            <dxd:LayoutControlItem Caption="Title">
+                                <dxe:TextEdit />
+                            </dxd:LayoutControlItem>
+                            <dxd:LayoutGroup Height="Auto">
+                                <dxd:LayoutControlItem Caption="First name">
+                                    <dxe:TextEdit />
+                                </dxd:LayoutControlItem>
+                                <dxd:LayoutControlItem Caption="Last name">
+                                    <dxe:TextEdit />
+                                </dxd:LayoutControlItem>
+                            </dxd:LayoutGroup>
+                        </dxd:LayoutGroup>
+
+                        <dxd:LayoutGroup Caption="Notes" GroupBorderStyle="GroupBox" ShowCaption="True">
+                            <dxd:LayoutControlItem Caption="Notes" ShowCaption="False">
+                                <dxe:TextEdit />
+                            </dxd:LayoutControlItem>
+                        </dxd:LayoutGroup>
+
+                    </dxd:LayoutGroup>
+                </dxd:LayoutPanel>
+
+                <dxd:LayoutPanel Caption="Panel2">
+                    <dxd:LayoutGroup Caption="Address info" Orientation="Vertical" GroupBorderStyle="GroupBox" ShowCaption="True">
+                        <dxd:LayoutGroup Height="Auto">
+                            <dxd:LayoutControlItem Caption="Country">
+                                <dxe:TextEdit />
+                            </dxd:LayoutControlItem>
+                            <dxd:LayoutControlItem Caption="Region">
+                                <dxe:TextEdit />
+                            </dxd:LayoutControlItem>
+                        </dxd:LayoutGroup>
+                        <dxd:LayoutGroup Height="Auto">
+                            <dxd:LayoutControlItem Caption="City">
+                                <dxe:TextEdit />
+                            </dxd:LayoutControlItem>
+                            <dxd:LayoutControlItem Caption="Postal code">
+                                <dxe:TextEdit />
+                            </dxd:LayoutControlItem>
+                        </dxd:LayoutGroup>
+                        <dxd:LayoutControlItem Caption="Address">
+                            <dxe:TextEdit />
+                        </dxd:LayoutControlItem>
+
+                    </dxd:LayoutGroup>
+                </dxd:LayoutPanel>
+            </dxd:LayoutGroup>
+        </dxd:DockLayoutManager.LayoutRoot>
+    </dxd:DockLayoutManager>
+
+</UserControl>
