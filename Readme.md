@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainPage.xaml](./CS/LayoutPanel_Content_Ex/MainPage.xaml) (VB: [MainPage.xaml.vb](./VB/LayoutPanel_Content_Ex/MainPage.xaml.vb))
+* [MainPage.xaml.cs](./CS/LayoutPanel_Content_Ex/MainPage.xaml.cs) (VB: [MainPage.xaml.vb](./VB/LayoutPanel_Content_Ex/MainPage.xaml.vb))
+<!-- default file list end -->
 # How to build a layout of controls within LayoutPanels
 
 
